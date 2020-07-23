@@ -1,0 +1,251 @@
+@tailwind base;
+
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Bold-tr.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Black-tr.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Light-tr.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Medium-tr.ttf);
+  font-weight: 500;
+}
+
+html {
+  font-family: dinpro, serif;
+  font-size: calc(2.2vh);
+}
+
+input::placeholder {
+  color: #40455c;
+}
+
+.max-w-xxs {
+  max-width: 10rem;
+}
+
+@tailwind components;
+
+.h-18 {
+  height: 4.5rem;
+}
+
+.full-view {
+  height: calc(100vh - 2.9rem);
+}
+
+.w-2px {
+  width: 2px;
+}
+.w-3px {
+  width: 3px;
+}
+
+.main-circle {
+  top: -30.625rem;
+  z-index: -1;
+  left: calc(-25.875rem + 50vw);
+  width: 51.75rem;
+}
+
+.sec-circle {
+  bottom: -22.5rem;
+  z-index: -1;
+  left: calc(50vw - 29.875rem);
+  width: 57.75rem;
+}
+
+.sec-circle img {
+  width: 100%;
+}
+
+.main-circle img {
+  width: 114.0625rem;
+  display: block;
+}
+
+.text-shadow {
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.text-shadow-s {
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.28);
+}
+
+.text-max {
+  font-size: 8.5rem;
+}
+
+.text-main {
+  color: #fe3b78;
+}
+
+.text-sec {
+  color: #000033;
+}
+
+.text-sec-100 {
+  color: #40455c;
+}
+
+.shadow-pink {
+  -webkit-box-shadow: 0px 0px 31.25px 0px rgba(254, 59, 120, 0.24);
+  -moz-box-shadow: 0px 0px 31.25px 0px rgba(254, 59, 120, 0.24);
+  box-shadow: 0px 0px 31.25px 0px rgba(254, 59, 120, 0.24);
+}
+
+.price {
+  margin-top: -0.5rem;
+  position: relative;
+}
+
+.price::before {
+  content: "S/.";
+  font-size: 1.5rem;
+  position: absolute;
+  left: -2rem;
+  top: 0.8rem;
+  color: #ff844f8c;
+}
+
+.price-big {
+  margin-top: -2.4rem;
+  height: 10.5rem;
+}
+
+.price-big::before {
+  content: "S/";
+  font-size: 2rem;
+  position: relative;
+  left: 1.4rem;
+  bottom: 4rem;
+  color: white;
+}
+
+.bg-main {
+  background: #fe3b78;
+}
+
+.bg-sec {
+  background-color: #000033;
+}
+
+.importe {
+  max-width: 12rem;
+}
+
+.moneda-left {
+  z-index: -1;
+  top: 15.7rem;
+  left: -0.5rem;
+  width: 3.9375rem;
+}
+
+.moneda-right {
+  top: 26.8rem;
+  width: 6.875rem;
+  right: -4.125rem;
+}
+
+/* Ahorra section */
+
+.bg-gradient {
+  position: relative;
+  z-index: -2;
+  background: rgb(255, 133, 78);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff854e",endColorstr="#fe3b78",GradientType=1);
+}
+
+/* contact section */
+
+.contact-form {
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -20rem;
+}
+
+.bg-contact {
+  background-color: #ffe2eb;
+}
+
+/* footer */
+
+.bg-footer {
+  background-color: #a13e5c;
+}
+
+@tailwind utilities;
+
+@media (min-width: 1280px) {
+  .xl\:text-sec {
+    color: #40455c;
+  }
+  .xl\:text-main {
+    color: #000033;
+  }
+  .xl\:text-shadow-0 {
+    text-shadow: none;
+  }
+  .main-circle {
+    top: -23rem;
+    z-index: -1;
+    left: 45vw;
+    width: 30.75rem;
+  }
+  .moneda-left {
+    left: 1.5rem;
+  }
+  .moneda-right {
+    left: 24rem;
+    right: auto;
+    top: 19.8rem;
+  }
+  .moneda-center {
+    left: 19rem;
+    top: 7rem;
+    width: 2rem;
+  }
+  .hero-person {
+    bottom: -44vh;
+    width: 40rem;
+    z-index: -3;
+  }
+  .sec-circle {
+    left: -18rem;
+    bottom: -20rem;
+  }
+  .sec-circle-2 {
+    right: -20rem;
+    top: -20rem;
+  }
+  #contacto {
+    padding-bottom: 12rem;
+  }
+}
