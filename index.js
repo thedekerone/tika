@@ -7,8 +7,10 @@ window.addEventListener("scroll", (event) => {
   if (scrolled > 200) {
     header.classList.add("flex");
     header.classList.remove("hidden");
+    header.classList.add("indexer");
   } else {
     header.classList.remove("flex");
+    header.classList.remove("indexer");
     header.classList.add("hidden");
   }
 });

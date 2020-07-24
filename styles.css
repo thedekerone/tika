@@ -44,6 +44,11 @@ input::placeholder {
   height: calc(100vh - 2.9rem);
 }
 
+.helper {
+  padding-top: 2.9rem;
+  margin-top: -2.9rem;
+}
+
 .w-2px {
   width: 2px;
 }
@@ -252,7 +257,7 @@ input::placeholder {
     right: -20rem;
     top: -20rem;
   }
-  #contacto {
+  .contacto {
     padding-bottom: 12rem;
   }
 }
