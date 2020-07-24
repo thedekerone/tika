@@ -1,0 +1,250 @@
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Bold-tr.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Black-tr.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Light-tr.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: dinpro;
+  src: url(./fonts/DINPro-Medium-tr.ttf);
+  font-weight: 500;
+}
+
+:root {
+  --forny-form-paddings: 2.5rem;
+
+  --forny-color-accent-100: hsla(340, 100%, 94%, 1);
+  --forny-color-accent-500: rgb(255, 133, 78);
+  --forny-color-accent-700: hsla(325, 89%, 38%, 1);
+
+  --forny-color-gray-100: hsla(216, 33%, 97%, 1);
+  --forny-color-gray-300: hsla(0, 0%, 0%, 0.1);
+  --forny-color-gray-500: hsla(211, 12%, 64%, 1);
+  --forny-color-gray-700: hsla(210, 27%, 70%, 1);
+  --forny-color-gray-900: hsla(208, 20%, 24%, 1);
+
+  --forny-font-family: "dinpro";
+  --forny-color-text-100: var(--forny-color-gray-100);
+  --forny-color-text: var(--forny-color-gray-500);
+  --forny-color-header: var(--forny-color-gray-900);
+  --forny-link-color: var(--forny-color-accent-500);
+
+  --forny-form-control-border: none;
+  --forny-form-control-padding: var(--forny-p2) var(--forny-p4);
+  --forny-form-control-radius: 24px;
+  --forny-form-control-background: var(--forny-color-gray-100);
+  --forny-shadow-color: var(--forny-color-gray-300);
+}
+
+.forny-container {
+  background-size: contain;
+  display: block;
+  align-items: center;
+}
+
+.forny-inner {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+.forny-two-pane {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bottom-text {
+  background: white;
+  color: #330000;
+  width: 50vw;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 0;
+  padding: 2rem;
+}
+
+.bottom-text > h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ventajas {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.bottom-text::after {
+  content: "";
+  left: 0;
+  bottom: 18.9rem;
+  z-index: 1;
+  position: absolute;
+  height: 15rem;
+  width: 100%;
+  background: rgb(255, 133, 78);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff854e",endColorstr="#ffffff",GradientType=1);
+}
+
+.ventajas > * {
+  max-width: 12rem;
+}
+
+.ventajas h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.ventajas img {
+  margin-bottom: 1.5rem;
+}
+
+.forny-two-pane > div {
+  flex: 1;
+  background-color: white;
+}
+
+#register {
+  background: url("../imagenes/tbm_20190822123956.jpeg") center top no-repeat
+    hsla(340, 100%, 94%, 1);
+  background: url("../imagenes/tbm_20190822123956.jpeg") center top no-repeat
+    var(--forny-color-accent-100);
+  background-size: 10 0vh;
+}
+
+.forny-two-pane > div:first-child {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 133, 78);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 133, 78, 1) 0%,
+    rgba(254, 59, 120, 1) 100%
+  );
+}
+
+.forny-two-pane > div:last-child {
+  display: none;
+  background: url("../imagenes/Bedre-rentetilbud.jpg") left bottom no-repeat
+    hsla(340, 100%, 94%, 1);
+  background: url("../imagenes/Bedre-rentetilbud.jpg") left bottom no-repeat
+    var(--forny-color-accent-100);
+  background-size: cover;
+}
+
+.forny-form {
+  padding: 5rem;
+  padding: var(--forny-form-paddings);
+  background: white;
+  border-radius: 24px;
+  border-radius: var(--forny-form-control-radius);
+}
+
+.forny-form .forny-logo {
+  text-align: center;
+  color: hsla(208, 20%, 24%, 1);
+  color: var(--forny-color-gray-900);
+}
+
+.forny-logo img {
+  width: 150px;
+}
+
+.forny-form h4 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .forny-container {
+    background-color: hsla(216, 33%, 97%, 1);
+    background-color: var(--forny-color-gray-100);
+  }
+
+  .forny-two-pane > div:last-child {
+    display: block;
+  }
+}
+
+.forny-container .btn-social {
+  color: hsla(208, 20%, 24%, 1);
+  color: var(--forny-color-gray-900);
+  background-color: transparent !important;
+  width: auto;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-size: var(--forny-text-sm);
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 1rem !important;
+  margin-right: var(--forny-p4) !important;
+}
+
+.forny-container .btn-social:hover {
+  text-decoration: underline;
+}
+
+/* FORMS */
+
+.forny-form .form-group {
+  margin-bottom: 1rem;
+  margin-bottom: var(--forny-p4);
+  background: hsla(216, 33%, 97%, 1);
+  background: var(--forny-form-control-background);
+  border-radius: 24px;
+  border-radius: var(--forny-form-control-radius);
+  transition: box-shadow 0.3s;
+  border: 1px solid hsla(216, 33%, 97%, 1);
+  border: 1px solid var(--forny-form-control-background);
+}
+
+/* BUTTONS */
+
+.forny-form .btn {
+  border-radius: 24px;
+  border-radius: var(--forny-form-control-radius);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  padding: var(--forny-p2) var(--forny-p4);
+}
+
+.forny-form .input-group .input-group-prepend + .form-control {
+  padding-left: 0.5rem;
+  padding-left: var(--forny-p2);
+}
