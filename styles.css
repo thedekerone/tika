@@ -200,6 +200,12 @@ input::placeholder {
 .bg-footer {
   background-color: #a13e5c;
 }
+.turn-dark * {
+  color: #000033 !important;
+}
+.indexer {
+  z-index: 999;
+}
 
 @tailwind utilities;
 
@@ -207,6 +213,7 @@ input::placeholder {
   .xl\:text-sec {
     color: #40455c;
   }
+
   .xl\:text-main {
     color: #000033;
   }

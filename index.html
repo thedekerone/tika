@@ -12,10 +12,10 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="xl:bg-transparent bg-white flex justify-center">
       <div
         id="inicio"
-        class="flex xl:bg-transparent xl:max-w-5xl xl:px-12 px-6 h-12 justify-between container mx-auto items-center bg-white"
+        class="flex xl:w-full container xl:px-24 px-6 h-12 justify-between mx-auto items-center"
       >
         <div class="logo">
           <a href="#inicio"
@@ -35,6 +35,32 @@
         </div>
       </div>
     </header>
+    <div
+      id="header"
+      class="hidden top-0 bg-white fixed w-screen indexer justify-center"
+    >
+      <div
+        id="inicio2"
+        class="flex xl:w-full container xl:px-24 px-6 h-12 justify-between mx-auto items-center"
+      >
+        <div class="logo">
+          <a href="#inicio"
+            ><img width="100px" src="imagenes/tika.png" alt="Tika logo"
+          /></a>
+        </div>
+        <nav id="navi" class="hidden turn-dark xl:block">
+          <ul class="flex turn-dark">
+            <li class="ml-8 text-white"><a href="#inicio">Nosotros</a></li>
+            <li class="ml-8 text-white"><a href="#ahorro">Ahorro</a></li>
+            <li class="ml-8 text-white"><a href="#ventajas">Ventajas</a></li>
+            <li class="ml-8"><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="flex justify-center xl:hidden items-center">
+          <i class="fas fa-bars text-xl"></i>
+        </div>
+      </div>
+    </div>
     <main>
       <section class="overflow-hidden xl:overflow-visible relative full-view">
         <div class="hero-person hidden xl:block absolute">
@@ -350,5 +376,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
