@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="828" height="828" viewBox="0 0 828 828">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff854e"/>
+      <stop offset="1" stop-color="#fe3b78"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_639" data-name="Grupo 639" transform="translate(-462.434 -734.434)">
+    <g id="Grupo_49" data-name="Grupo 49" transform="translate(1091.434 1884.434) rotate(180)">
+      <g id="Grupo_47" data-name="Grupo 47" transform="translate(-181.648 -187.649)">
+        <circle id="Elipse_1" data-name="Elipse 1" cx="414" cy="414" r="414" transform="translate(-17.352 509.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+        <circle id="Elipse_2" data-name="Elipse 2" cx="338" cy="338" r="338" transform="translate(58.648 585.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+        <circle id="Elipse_3" data-name="Elipse 3" cx="245" cy="245" r="245" transform="translate(151.648 678.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Grupo_48" data-name="Grupo 48" transform="translate(-135.648 -141.649)" opacity="0.99">
+        <circle id="Elipse_1-2" data-name="Elipse 1" cx="368" cy="368" r="368" transform="translate(-17.352 509.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+        <circle id="Elipse_2-2" data-name="Elipse 2" cx="300" cy="300" r="300" transform="translate(50.648 577.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+        <circle id="Elipse_3-2" data-name="Elipse 3" cx="218" cy="218" r="218" transform="translate(132.648 659.649)" opacity="0.25" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

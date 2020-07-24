@@ -15,23 +15,23 @@
     <header class="xl:bg-transparent bg-white flex justify-center">
       <div
         id="inicio"
-        class="flex xl:w-full container xl:px-24 px-6 h-12 justify-between mx-auto items-center"
+        class="flex xl:w-full xl:h-20 container hero-section xl:px-0 px-6 h-20 justify-between mx-auto items-center"
       >
         <div class="logo">
           <a href="#inicio"
-            ><img width="100px" src="imagenes/tika.png" alt="Tika logo"
+            ><img width="120px" src="imagenes/tikaRGB-1.svg" alt="Tika logo"
           /></a>
         </div>
         <nav class="hidden xl:block">
           <ul class="flex">
-            <li class="ml-8 text-white"><a href="#inicio">Nosotros</a></li>
-            <li class="ml-8 text-white"><a href="#ahorro">Ahorro</a></li>
-            <li class="ml-8 text-white"><a href="#ventajas">Ventajas</a></li>
-            <li class="ml-8"><a href="#contacto">Contacto</a></li>
+            <li class="ml-16 text-white"><a href="#inicio">Nosotros</a></li>
+            <li class="ml-16 text-white"><a href="#ahorro">Ahorro</a></li>
+            <li class="ml-16 text-white"><a href="#ventajas">Ventajas</a></li>
+            <li class="ml-16"><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-        <div class="flex justify-center xl:hidden items-center">
-          <i class="fas fa-bars text-xl"></i>
+        <div class="flex modal-open justify-center xl:hidden items-center">
+          <img src="imagenes/Grupo 693.svg" width="30px" alt="" />
         </div>
       </div>
     </header>
@@ -41,42 +41,50 @@
     >
       <div
         id="inicio2"
-        class="flex xl:w-full container xl:px-24 px-6 h-12 justify-between mx-auto items-center"
+        class="flex xl:w-full container xl:h-20 xl:px-1 hero-section hero-section px-6 h-20 justify-between mx-auto items-center"
       >
         <div class="logo">
           <a href="#inicio"
-            ><img width="100px" src="imagenes/tika.png" alt="Tika logo"
+            ><img width="120px" src="imagenes/tikaRGB-1.svg" alt="Tika logo"
           /></a>
         </div>
         <nav id="navi" class="hidden turn-dark xl:block">
           <ul class="flex turn-dark">
-            <li class="ml-8 text-white"><a href="#inicio">Nosotros</a></li>
-            <li class="ml-8 text-white"><a href="#ahorro">Ahorro</a></li>
-            <li class="ml-8 text-white"><a href="#ventajas">Ventajas</a></li>
-            <li class="ml-8"><a href="#contacto">Contacto</a></li>
+            <li class="ml-16 text-white"><a href="#inicio">Nosotros</a></li>
+            <li class="ml-16 text-white"><a href="#ahorro">Ahorro</a></li>
+            <li class="ml-16 text-white"><a href="#ventajas">Ventajas</a></li>
+            <li class="ml-16"><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-        <div class="flex justify-center xl:hidden items-center">
-          <i class="fas fa-bars text-xl"></i>
+        <div class="flex modal-open justify-center xl:hidden items-center">
+          <img src="imagenes/Grupo 693.svg" width="30px" alt="" />
         </div>
       </div>
     </div>
     <main>
       <section class="overflow-hidden xl:overflow-visible relative full-view">
         <div class="hero-person hidden xl:block absolute">
-          <img class="w-full" src="imagenes/Grupo697@2x.png" alt="" />
+          <img class="w-full" src="imagenes/render ejecutivo@2x.png" alt="" />
         </div>
-        <div class="moneda-left xl:hidden absolute">
-          <img src="imagenes/moneda.png" alt="moneda left" />
+        <img
+          class="absolute hidden hero-person-circle"
+          src="imagenes/Grupo 639.svg"
+          alt=""
+        />
+        <div class="moneda-left absolute">
+          <img src="imagenes/Grupo 86.svg" alt="moneda left" />
         </div>
-        <div class="moneda-right xl:hidden absolute">
-          <img src="imagenes/moneda.png" alt="moneda right" />
+        <div class="moneda-right absolute">
+          <img src="imagenes/Grupo 88.svg" alt="moneda right" />
+        </div>
+        <div class="moneda-center hidden xl:block absolute">
+          <img src="imagenes/Grupo 88.svg" alt="moneda right" />
         </div>
 
         <div class="absolute main-circle">
-          <img src="imagenes/Grupo643.png" alt="color circle" />
+          <img src="imagenes/Grupo 643.svg" alt="color circle" />
         </div>
-        <div class="xl:max-w-5xl xl:h-full flex items-center xl:mx-auto">
+        <div class="xl:h-full flex hero-section items-center xl:mx-auto">
           <div class="container xl:mr-2 max-w-xs mx-auto px-1">
             <h1
               class="text-white xl:leading-10 xl:text-main xl:text-shadow-0 xl:mt-0 text-center text-shadow font-black mt-24 text-3xl"
@@ -89,33 +97,35 @@
               El mejor tipo de cambio en Perú
             </p>
             <div
-              class="flex xl:mt-4 xl:h-20 justify-center h-18 items-start mt-16"
+              class="flex xl:mt-8 xl:h-20 justify-center h-18 items-start mt-16"
             >
               <div class="pr-8 pl-4 border-solid text-center">
                 <p
-                  class="text-xl text-sec-100 h-5 xl:h-auto text-center flex justify-center items-center"
+                  class="text-xl text-sec-100 h-5 xl:h-8 text-center flex justify-center items-center"
                 >
                   Compra
                 </p>
-                <span class="text-5xl font-black text-sec price block"
+                <span
+                  class="text-5xl xl:text-4xl font-black text-sec price block"
                   >3.37</span
                 >
               </div>
               <div class="w-2px h-full self-start bg-gray-300"></div>
               <div class="pl-12 border-solid text-center">
                 <p
-                  class="text-xl h-5 text-sec-100 xl:h-auto text-center flex justify-center items-center"
+                  class="text-xl h-5 text-sec-100 xl:h-8 text-center flex justify-center items-center"
                 >
                   Venta
                 </p>
-                <span class="text-5xl font-black text-sec price block"
+                <span
+                  class="text-5xl xl:text-4xl font-black text-sec price block"
                   >3.39</span
                 >
               </div>
             </div>
             <a
               href="#"
-              class="bg-main xl:mt-10 mt-20 py-2 text-white font-bold text-2xl max-w-xl w-full block text-center rounded-full"
+              class="bg-main xl:mt-10 mt-16 py-2 text-white font-bold text-2xl max-w-xl w-full block text-center rounded-full"
               >Cambiar dólares</a
             >
             <p class="mx-auto mt-3 text-sec-100 text-lg importe">
@@ -126,9 +136,9 @@
       </section>
       <section
         id="ahorro"
-        class="relative h-screen overflow-hidden helper ahorra-section w-full"
+        class="relative xl:h-screen min-h-screen overflow-hidden helper ahorra-section w-full"
       >
-        <div class="h-full full-view bg-gradient overflow-hidden w-full">
+        <div class="h-screen xl:h-full bg-gradient overflow-hidden w-full">
           <div
             class="xl:h-full xl:max-w-4xl xl:mx-auto xl:flex xl:items-center xl:justify-between xl:flex-row-reverse"
           >
@@ -157,7 +167,7 @@
                   cambiados
                 </p>
               </div>
-              <div class="mt-4">
+              <div class="mt-4 mx-2">
                 <a
                   href="#"
                   class="text-center py-3 block max-w-xs mx-auto mt-8 text-2xl font-bold bg-sec text-white rounded-full"
@@ -189,7 +199,7 @@
 
           <div class="container mx-auto xl:mb-20">
             <div
-              class="w-full mt-32 xl:mt-12 py-4 px-8 flex flex-col xl:justify-between xl:flex-row items-center"
+              class="w-full mt-24 xl:mt-12 py-4 px-8 flex flex-col xl:justify-between xl:flex-row items-center"
             >
               <div
                 class="w-full shadow-pink pt-8 pb-10 flex flex-col rounded-lg justify-center items-center"
@@ -228,7 +238,7 @@
 
       <section id="contacto" class="h-screen helper xl:h-auto relative">
         <div class="bg-contact contacto h-full relative pt-12">
-          <h2 class="text-center text-sec font-black text-3xl">
+          <h2 class="text-center text-2xl text-sec font-black sm:text-3xl">
             Operaciones inmediatas
           </h2>
           <div
@@ -246,104 +256,114 @@
             />
           </div>
 
-          <div
-            class="contact-form mx-8 xl:max-w-4xl sm:mx-auto max-w-xl py-12 absolute bg-gradient rounded-lg"
-          >
-            <form class="px-8 xl:flex xl:items-center xl:justify-between">
-              <h2
-                class="text-white xl:text-3xl xl:ml-8 xl:max-w-xs font-medium text-xl text-center"
+          <div>
+            <div
+              class="contact-form w-full px-4 xl:max-w-4xl sm:mx-auto sm:max-w-xl max-w-lg absolute"
+            >
+              <form
+                class="px-8 py-12 rounded-lg bg-gradient xl:flex xl:items-center xl:justify-between"
               >
-                ¿Quieres tener más información sobre nosotros?
-              </h2>
-              <div class="xl:mr-6">
-                <div class="mt-16 xl:mt-0">
-                  <input
-                    type="text"
-                    class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
-                    name="nombre"
-                    placeholder="Nombre"
-                  />
-                  <input
-                    type="tel"
-                    class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
-                    name="celular"
-                    placeholder="Celular"
-                  />
-                  <input
-                    type="email"
-                    class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  class="mt-10 rounded-full bg-sec text-center max-w-xs w-full py-3 text-2xl font-bold text-white"
+                <h2
+                  class="text-white xl:font-black xl:text-3xl xl:ml-8 xl:max-w-xs max-w-xs mx-auto font-medium text-lg sm:text-xl text-center"
                 >
-                  Enviar
-                </button>
-              </div>
-            </form>
+                  ¿Quieres tener más información sobre nosotros?
+                </h2>
+                <div class="xl:mr-6">
+                  <div class="mt-16 xl:mt-0">
+                    <input
+                      type="text"
+                      class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
+                      name="nombre"
+                      placeholder="Nombre"
+                    />
+                    <input
+                      type="tel"
+                      class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
+                      name="celular"
+                      placeholder="Celular"
+                    />
+                    <input
+                      type="email"
+                      class="block text-2xl mt-5 rounded-lg w-full px-6 py-3 shadow-lg"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="mt-10 xl:mt-6 xl:w-full rounded-full bg-sec text-center max-w-xs w-full py-3 text-2xl font-bold text-white"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer
-      class="bg-footer xl:flex xl:justify-between pb-32 w-full pt-32 px-8 min-h-screen"
+      class="bg-footer footer xl:flex xl:justify-between pb-32 w-full pt-32 px-8 min-h-screen"
     >
       <div
         class="xl:flex xl:max-w-5xl w-full mt-8 xl:justify-between xl:mx-auto"
       >
         <div class="mt-64 xl:mt-48 xl:pt-6">
           <img
-            src="imagenes/tikaRGB3(1)@2x.png"
-            width="130px"
+            src="imagenes/tikaRGB3 (1).svg"
+            class="w-32 xl:w-40"
             alt="tika white"
           />
-          <p class="text-white text-xl mt-3">
+          <p class="text-white font-light text-xl xl:text-lg mt-3">
             © Tika Services 2020 <br />
             RUC: 20605702512
           </p>
-          <div
-            class="mt-6 mx-auto flex max-w-sm w-full justify-between items-center"
-          >
+          <div class="mt-6 flex max-w-sm w-full justify-between items-center">
             <p>
-              <img src="imagenes/Grupo699@2x.png" class="w-16 xl:w-12" alt="" />
+              <img src="imagenes/Grupo699@2x.png" class="w-16 xl:w-10" alt="" />
             </p>
             <p>
               <img
                 src="imagenes/Grupo698@2x.png"
-                class="w-16 xl:w-12 xl:ml-2"
+                class="w-16 xl:w-10 xl:ml-4"
                 alt=""
               />
             </p>
             <p>
               <img
                 src="imagenes/Grupo700@2x.png"
-                class="w-16 xl:w-12 xl:ml-2"
+                class="w-16 xl:w-10 xl:ml-4"
                 alt=""
               />
             </p>
             <p>
               <img
                 src="imagenes/Grupo701@2x.png"
-                class="w-16 xl:w-12 xl:ml-2"
+                class="w-16 xl:w-10 xl:ml-4"
                 alt=""
               />
             </p>
           </div>
         </div>
         <div class="xl:mt-48">
-          <h3 class="text-white text-2xl mb-3 mt-8">Soporte</h3>
-          <p class="text-white text-xl font-bold">Terminos y condiciones</p>
-          <p class="text-white text-xl font-bold">Libro de reclamaciones</p>
+          <h3 class="text-white text-2xl mb-3 xl:mb-2 mt-8">Soporte</h3>
+          <p class="text-white font-light text-xl">
+            Terminos y condiciones
+          </p>
+          <p class="text-white font-light text-xl">
+            Libro de reclamaciones
+          </p>
         </div>
         <div class="xl:mt-48">
           <h3 class="text-white text-2xl mb-5 mt-8">Contacto</h3>
           <div>
             <div class="flex">
-              <img src="imagenes/correox2.png" class="w-16 h-16" alt="correo" />
+              <img
+                src="imagenes/correox2.png"
+                class="w-16 h-16 xl:w-12 xl:h-12"
+                alt="correo"
+              />
               <div class="ml-6">
                 <p class="text-white text-xl font-bold">Email</p>
                 <p class="text-white font-light text-lg">contact@tika.pe</p>
@@ -352,7 +372,7 @@
             <div class="flex mt-6">
               <img
                 src="imagenes/Telefonox2.png"
-                class="w-16 h-16"
+                class="w-16 h-16 xl:w-12 xl:h-12"
                 alt="correo"
               />
               <div class="ml-6">
@@ -361,7 +381,11 @@
               </div>
             </div>
             <div class="flex mt-6">
-              <img src="imagenes/wppx2.png" class="w-16 h-16" alt="correo" />
+              <img
+                src="imagenes/wppx2.png"
+                class="w-16 h-16 xl:w-12 xl:h-12"
+                alt="correo"
+              />
               <div class="ml-6">
                 <p class="text-white text-xl font-bold">Whatsapp</p>
                 <p class="text-white font-light text-lg">940 250 975</p>
@@ -370,7 +394,7 @@
             <div class="flex mt-6">
               <img
                 src="imagenes/calendariox2.png"
-                class="w-16 h-16"
+                class="w-16 h-16 xl:w-12 xl:h-12"
                 alt="correo"
               />
               <div class="ml-6">
@@ -385,6 +409,24 @@
         </div>
       </div>
     </footer>
+
+    <div
+      id="modal"
+      class="modal hide-modal fixed z-50 top-0 w-screen h-screen bg-white"
+    >
+      <div
+        class="flex modal-close justify-end h-20 px-6 xl:hidden items-center"
+      >
+        <img src="imagenes/Grupo 697.svg" alt="" />
+      </div>
+      <ul class="text-center mt-4">
+        <li class="py-3 modal-close"><a href="#inicio">Nosotros</a></li>
+        <li class="py-3 modal-close"><a href="#ahorro">Ahorro</a></li>
+        <li class="py-3 modal-close"><a href="#ventajas">Ventajas</a></li>
+        <li class="py-3 modal-close"><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

@@ -36,6 +36,17 @@ input::placeholder {
 
 @tailwind components;
 
+#modal {
+  transition: 0.5s;
+}
+
+.hide-modal {
+  left: 100%;
+}
+.show-modal {
+  left: 0;
+}
+
 .h-18 {
   height: 4.5rem;
 }
@@ -209,7 +220,20 @@ input::placeholder {
   color: #000033 !important;
 }
 .indexer {
-  z-index: 999;
+  z-index: 4;
+}
+
+#inicio2 {
+  z-index: 5;
+}
+
+.full-view {
+  height: calc(100vh - 5rem);
+}
+
+.helper {
+  padding-top: 5rem;
+  margin-top: -5rem;
 }
 
 @tailwind utilities;
@@ -226,29 +250,47 @@ input::placeholder {
     text-shadow: none;
   }
   .main-circle {
-    top: -23rem;
+    top: -25rem;
     z-index: -1;
-    left: 45vw;
+    left: 52.8vw;
     width: 30.75rem;
   }
   .moneda-left {
     left: 1.5rem;
+    top: 11rem;
+    width: 6.5rem;
   }
   .moneda-right {
-    left: 24rem;
+    left: 35rem;
     right: auto;
-    top: 19.8rem;
+    width: 9rem;
+    top: 16.4rem;
   }
+
+  .moneda-right img {
+    width: inherit;
+  }
+
   .moneda-center {
-    left: 19rem;
-    top: 7rem;
-    width: 2rem;
+    left: 26rem;
+    top: 2rem;
+    width: 3rem;
   }
   .hero-person {
-    bottom: -44vh;
-    width: 40rem;
+    bottom: 0;
+    width: 28rem;
     z-index: -3;
+    left: 10.875rem;
   }
+
+  .hero-person-circle {
+    width: 52.75rem;
+    display: block;
+    bottom: -26.375rem;
+    left: 0;
+    z-index: -4;
+  }
+
   .sec-circle {
     left: -18rem;
     bottom: -20rem;
@@ -259,5 +301,27 @@ input::placeholder {
   }
   .contacto {
     padding-bottom: 12rem;
+  }
+
+  .price {
+    margin-top: -0.2rem;
+  }
+
+  .price::before {
+    top: 0.4rem;
+  }
+
+  .hero-section {
+    max-width: 70rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .contact-form {
+    bottom: -28rem;
+  }
+
+  .footer {
+    padding-top: 16rem;
   }
 }
